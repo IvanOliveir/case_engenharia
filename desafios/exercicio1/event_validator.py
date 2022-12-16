@@ -31,9 +31,6 @@ def handler(event):
     Utilize a função send_event_to_queue para envio do evento para a fila,
         não é necessário alterá-la
     '''
-    #Read the json schema
-    #with open('schema.json') as json_file:
-     #   json_schema = json.load(json_file)
 
     #Instanciate the DataQuality class
     dq_class = data_quality_mod.DataQuality('schema.json')
